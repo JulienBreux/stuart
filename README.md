@@ -13,7 +13,9 @@ Stuart Delivery Client Library for Ruby.
 
 Install GEM manually ...
 
-    gem install stuart
+```bash
+gem install stuart
+```
 
 ... or add GEM to your `Gemfile` :+1:
 
@@ -23,7 +25,28 @@ Install GEM manually ...
 
 ## :blue_book: Example usage
 
-    # TODO
+```ruby
+require 'stuart'
+
+# Client connection
+options = {
+  username: '',
+  password: ''
+}
+client = Stuart::Client.new(options)
+
+# Create a picking place
+place = client.Place.build
+place.save({
+  'placeTypeId'     => '2',
+  'addressStreet'   => '...',
+  'addressPostcode' => '...'
+})
+place.fetch
+
+# pp place
+# > {...}
+```
 
 ## :link: Link to Stuart REST API documentation
 
@@ -41,4 +64,6 @@ See [LICENSE](https://github.com/JulienBreux/stuart/blob/master/LICENSE).
 
 You can download [Julien Breux](https://github.com/JulienBreux/)'s public key to verify the signature.
 
-    gpg --keyserver hkp://pgp.mit.edu --recv-keys 0998EBAA
+```bash
+gpg --keyserver hkp://pgp.mit.edu --recv-keys 0998EBAA
+```
