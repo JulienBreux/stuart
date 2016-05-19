@@ -7,30 +7,38 @@
 [![Test Coverage](https://codeclimate.com/github/JulienBreux/stuart/badges/coverage.svg)](https://codeclimate.com/github/JulienBreux/stuart/coverage)
 [![Inline docs](http://inch-ci.org/github/JulienBreux/stuart.svg?branch=master)](http://inch-ci.org/github/JulienBreux/stuart)
 
-:rocket: Stuart Delivery Client Library for Ruby.
+Stuart Delivery Client Library for Ruby.
 
-## Install
+## :inbox_tray: Install
+
+Install GEM manually ...
 
     gem install stuart
 
-## Getting Started
+... or add GEM to your `Gemfile` :+1:
 
-    TODO
+    source 'https://rubygems.org'
 
-## Uninstall
+    gem 'stuart'
 
-    gem uninstall stuart
+## :blue_book: Example usage
 
-## Donate
+    # TODO
+
+## :link: Link to Stuart REST API documentation
+
+* [Overview](https://stuart.com/docs/#api-overview)
+
+## :bowtie: Donate
 
 I maintain this project in my free time, if it helped you please support my work [via paypal](https://paypal.me/JulienBreux), thanks a lot!
 
-## License
+## :closed_book: License
 
 See [LICENSE](https://github.com/JulienBreux/stuart/blob/master/LICENSE).
 
-## GPG Signature
+## :key: GPG Signature
 
-You can download Julien Breux's public key to verify the signature.
+You can download [Julien Breux](https://github.com/JulienBreux/)'s public key to verify the signature.
 
     gpg --keyserver hkp://pgp.mit.edu --recv-keys 0998EBAA
