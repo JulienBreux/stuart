@@ -38,7 +38,7 @@ client = Stuart::Client.new(options)
 # Create a picking place
 place = client.Place.build
 place.save({
-  'placeTypeId'     => '2',
+  'placeTypeId'     => client.PlaceType.find('picking').id,
   'addressStreet'   => '...',
   'addressPostcode' => '...'
 })
